@@ -129,3 +129,8 @@ body {
   color: #fff;
   margin: 0;
 }
+
+.features-line {
+  background: url("/assets/images/backgorund_grid.png") no-repeat;
+  background-size: 100%;
+}
