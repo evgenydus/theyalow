@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Asap";
+  src: url("assets/fonts/Asap-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("assets/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("assets/fonts/PT-Sans.ttf");
+}
+
+@font-face {
+  font-family: "PT Sans Narrow Bold";
+  src: url("assets/fonts/PT_Sans-Narrow-Bold.ttf");
+}
+
+@font-face {
+  font-family: "SegoeUI";
+  src: url("assets/fonts/Segoe-UI.ttf");
+}
+
+@font-face {
+  font-family: "SegoeWP";
+  src: url("assets/fonts/SegoeWP.ttf");
+}
+
+@font-face {
+  font-family: "SegoeWP-Light";
+  src: url("assets/fonts/SegoeWP-Light.ttf");
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  padding: 30px 0 70px 0;
+
+  background: url("assets/images/header_background.png") no-repeat;
+  background-size: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-left: 140px;
+  padding-right: 140px;
+
+}
+
+.navigation {
+  font-family: "SegoeWP-Light", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  background-color: #f5c506;
+  box-shadow: -5px -4px 0 0 rgba(245, 197, 6, 0.3), -9px -7px 0 0 rgba(245, 197, 6, 0.3);
+}
+
+.link:link,
+.link:active,
+.link:visited {
+  color: #b99403;
+  text-decoration: none;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.nav-about-us {
+  display: inline-block;
+
+  padding: 7px 20px 7px 40px;
+}
+
+.nav-services {
+  display: inline-block;
+
+  padding: 7px 15px;
+
+  border-left: 1px solid #b99403;
+  border-right: 1px solid #b99403;
+}
+
+.nav-contact {
+  display: inline-block;
+
+  padding: 7px 20px 7px 15px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 55px;
+}
+
+.arrow {
+  padding: 20px 10px;
+
+  background-color: #f5c506;
+}
+
+.cool-text {
+  text-align: center;
+  font-family: "Asap", "Arial", sans-serif;
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+.cool {
+  color: #f5c506;
+  margin: 0;
+}
+
+.minimal {
+  color: #fff;
+  margin: 0;
+}
