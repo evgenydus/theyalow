@@ -33,34 +33,72 @@
   src: url("assets/fonts/SegoeWP-Light.ttf");
 }
 
+@font-face {
+  font-family: "Lucida Sans Italic";
+  src: url("assets/fonts/Lucida_sans-italic.ttf");
+}
+
 body {
   margin: 0;
+
+  font-size: 16px;
 }
 
 .wrapper {
-  padding: 30px 0 70px 0;
+  padding: 27px 0 70px 0;
 
-  background: url("assets/images/header_background.png") no-repeat;
+  background: url("assets/images/header_background.jpg") no-repeat;
   background-size: 100%;
+}
+
+.hidden {
+  position: absolute;
+  display: none;
+
+  height: 1px;
+  width: 1px;
+}
+
+.logo-block {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  margin: 12px 0 0 3px;
+
+  color: #fff;
+  font-family: "Lucida Sans Italic", arial, sans-serif;
+  font-size: 41px;
+  font-weight: normal;
+  letter-spacing: 0.32px;
+  text-shadow: 1px 1px 0 #000000;
+  text-transform: uppercase;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-left: 140px;
-  padding-right: 140px;
 
+  padding-left: 139px;
+  padding-right: 140px;
 }
 
 .navigation {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
   font-family: "SegoeWP-Light", "Arial", sans-serif;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
 
-  background-color: #f5c506;
+  background-color: #b99403;
   box-shadow: -5px -4px 0 0 rgba(245, 197, 6, 0.3), -9px -7px 0 0 rgba(245, 197, 6, 0.3);
+  list-style: none;
 }
 
 .link:link,
@@ -75,42 +113,66 @@ body {
   align-items: center;
 }
 
+.menu-item:hover{
+  background: #FFFFFF;
+
+  cursor: pointer;
+  transition: 300ms ease;
+}
+
+.menu-item {
+  background-color: #f5c506;
+  margin-right: 1px;
+}
+
 .icon {
-  margin-right: 10px;
+  margin-right: 9px;
+  max-width: 22px;
 }
 
 .nav-about-us {
-  display: inline-block;
+  padding: 8px 22px 9px 38px;
+}
 
-  padding: 7px 20px 7px 40px;
+.nav-about-us .icon {
+  margin-right: 7px;
 }
 
 .nav-services {
-  display: inline-block;
-
-  padding: 7px 15px;
-
-  border-left: 1px solid #b99403;
-  border-right: 1px solid #b99403;
+  padding: 7px 18px 9px 11px;
 }
 
 .nav-contact {
-  display: inline-block;
-
-  padding: 7px 20px 7px 15px;
+  padding: 7px 20px 10px 15px;
+  margin: 0;
 }
 
-.main {
+.slider {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
+
   padding-top: 55px;
 }
 
-.arrow {
-  padding: 20px 10px;
-
+.arrow-left {
+  position: absolute;
+  padding: 18px 9px 14px 7px;
   background-color: #f5c506;
+  top: 50%;
+}
+
+.arrow-right {
+  position: absolute;
+  padding: 18px 7px 14px 9px;
+  background-color: #f5c506;
+  top: 50%;
+  right: 0;
+}
+
+.head-video {
+
 }
 
 .cool-text {
