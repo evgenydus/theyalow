@@ -45,10 +45,18 @@ body {
 }
 
 .wrapper {
-  padding: 27px 0 70px 0;
+  padding: 27px 0 71px 0;
 
   background: url("assets/images/header_background.jpg") no-repeat;
   background-size: 100%;
+}
+
+.hidden {
+  position: absolute;
+  display: none;
+
+  height: 1px;
+  width: 1px;
 }
 
 .logo-block {
@@ -56,42 +64,41 @@ body {
   align-items: center;
 }
 
-.logo {
-
-}
 .logo-text {
-  font-family: "Lucida Sans Italic", arial, sans-serif;
-  text-transform: uppercase;
+  margin: 12px 0 0 3px;
+
   color: #fff;
+  font-family: "Lucida Sans Italic", arial, sans-serif;
   font-size: 41px;
   font-weight: normal;
-  margin: 12px 0 0 3px;
   letter-spacing: 0.32px;
   text-shadow: 1px 1px 0 #000000;
+  text-transform: uppercase;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+
   padding-left: 139px;
   padding-right: 140px;
-
 }
 
 .navigation {
+  display: flex;
+
   margin: 0;
   padding: 0;
-  display: flex;
 
   font-family: "SegoeWP-Light", "Arial", sans-serif;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
 
-  list-style: none;
-  box-shadow: -5px -4px 0 0 rgba(245, 197, 6, 0.3), -9px -7px 0 0 rgba(245, 197, 6, 0.3);
   background-color: #b99403;
+  box-shadow: -5px -4px 0 0 rgba(245, 197, 6, 0.3), -9px -7px 0 0 rgba(245, 197, 6, 0.3);
+  list-style: none;
 }
 
 .link:link,
@@ -106,19 +113,25 @@ body {
   align-items: center;
 }
 
-.menu-item:hover,
-.link:hover {
+.menu-item:hover{
   background: #FFFFFF;
+
   cursor: pointer;
+  transition: 300ms ease;
+}
+
+.menu-item {
+  background-color: #f5c506;
+  margin-right: 1px;
 }
 
 .icon {
-  margin-right: 9px;
+  margin-right: 12px;
+  max-width: 22px;
 }
 
 .nav-about-us {
   padding: 8px 22px 9px 38px;
-  background-color: #f5c506;
 }
 
 .nav-about-us .icon {
@@ -126,51 +139,53 @@ body {
 }
 
 .nav-services {
-  padding: 7px 18px 9px 11px;
-
-  border-left: 1px solid #b99403;
-  border-right: 1px solid #b99403;
-  background-color: #f5c506;
+  padding: 8px 18px 9px 11px;
 }
 
 .nav-contact {
   padding: 7px 20px 10px 15px;
-  background-color: #f5c506;
+  margin: 0;
 }
 
-.main {
-  display: flex;
+.slider {
   position: relative;
+
+  margin-top: 56px;
+}
+
+.arrows {
+  display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding-top: 55px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translate(0, -50%);
 }
 
 .arrow-left {
-  position: absolute;
   padding: 18px 9px 14px 7px;
   background-color: #f5c506;
-  top: 50%;
-
 }
 
 .arrow-right {
-  position: absolute;
   padding: 18px 7px 14px 9px;
   background-color: #f5c506;
-  top: 50%;
-  right: 0;
 }
 
-.head-video {
-
+.slide-video {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 163px;
 }
 
 .cool-text {
   text-align: center;
   font-family: "Asap", "Arial", sans-serif;
-  font-size: 4em;
+  font-size: 63px;
   text-transform: uppercase;
+  margin-top: -32px;
 }
 
 .cool {
