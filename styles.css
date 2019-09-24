@@ -43,7 +43,7 @@ body {
 }
 
 .wrapper {
-  padding: 27px 0 71px 0;
+  padding: 27px 0 67px 0;
 
   background: url("assets/images/header_background.jpg") no-repeat;
   background-size: 100%;
@@ -51,10 +51,11 @@ body {
 
 .hidden {
   position: absolute;
-  display: none;
-
+  overflow: hidden;
   height: 1px;
   width: 1px;
+  padding: 0;
+  border: 0;
 }
 
 .logo-block {
@@ -72,6 +73,10 @@ body {
   letter-spacing: 0.32px;
   text-shadow: 1px 1px 0 #000000;
   text-transform: uppercase;
+}
+
+.home {
+  text-decoration: none;
 }
 
 .header {
@@ -115,12 +120,12 @@ body {
   background: #FFFFFF;
 
   cursor: pointer;
-  transition: 300ms ease;
 }
 
 .menu-item {
   background-color: #f5c506;
   margin-right: 1px;
+  transition: 300ms ease;
 }
 
 .icon {
@@ -133,7 +138,7 @@ body {
 }
 
 .nav-about-us .icon {
-  margin-right: 7px;
+  margin-right: 8px;
 }
 
 .nav-services {
@@ -155,41 +160,136 @@ body {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 51%;
+  top: 50%;
   width: 100%;
-  transform: translate(0, -61%);
+  transform: translate(0, -60%);
   max-height: 57px;
 }
 
-.arrow-left {
-  padding: 17px 9px 17px 7px;
+.arrow-button-left {
   background-color: #f5c506;
+  transition: 300ms ease;
+}
+
+.arrow-left {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 16px 9px 15px 7px;
+}
+
+.arrow-button-right {
+  background-color: #f5c506;
+  transition: 300ms ease;
 }
 
 .arrow-right {
-  padding: 16px 7px 18px 9px;
-  background-color: #f5c506;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 17px 7px 18px 9px;
 }
 
-.arrow-left:hover path,
-.arrow-right:hover path {
+.arrow-button-left:hover path,
+.arrow-button-right:hover path {
   fill: #b99403;
-  transition: 300ms ease;
 }
 
-.arrow-left:hover,
-.arrow-right:hover {
+.arrow-button-left:hover,
+.arrow-button-right:hover {
   background-color: #FFFFFF;
   cursor: pointer;
-  transition: 300ms ease;
+  box-shadow: 0 0 7px 1px #f5c506;
 }
 
-.slide-video {
+.parrot-slide {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 150px;
   padding-right: 163px;
+}
+
+.parrot-video {
+  position: relative;
+}
+
+.parrot-video video {
+  box-shadow: 0 0 5px 0.7px rgba(0, 0, 0, 0.26);
+}
+
+.play-button {
+  position: absolute;
+  width: 67px;
+  height: 67px;
+  background-color: #f5c506;
+  border-radius: 100%;
+  opacity: 0.8;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50.7%, -53.7%);
+  transition: 200ms ease;
+}
+
+.play-button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px 5px #fff;
+  opacity: 1;
+}
+
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-32%, -43%);
+}
+
+.bottom-controls {
+  position: absolute;
+  bottom: 26px;
+  left: 29px;
+}
+
+.bottom-play {
+  display: inline-block;
+  background-color: #f5c506;
+  padding: 2px 5px 0 9px;
+  opacity: 0.45;
+  transition: 150ms ease;
+}
+
+.bottom-play:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.time-line {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 3px;
+  margin-left: 20px;
+}
+
+.full-time {
+  width: 404px;
+  height: 12px;
+  background-color: #f5c506;
+  opacity: 0.45;
+  border-radius: 5px;
+}
+
+.current-time {
+  position: absolute;
+  height: 12px;
+  width: 179px;
+  background: #f5c506;
+  border-radius: 5px 0 0 5px;
+  bottom: 0;
+}
+
+.volume {
+  display: inline-block;
+  margin-left: 25px;
 }
 
 .slider-text {
