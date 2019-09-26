@@ -43,7 +43,7 @@ body {
 }
 
 .wrapper {
-  padding: 27px 0 66px 0;
+  padding: 28px 0 66px 0;
 
   background: url("assets/images/header_background.jpg") no-repeat;
   background-size: 100%;
@@ -339,8 +339,14 @@ body {
 }
 
 .features-line {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
   padding-left: 139px;
   padding-right: 139px;
+
+  font-size: 0;
 
   background: url("/assets/images/backgorund_grid.png") no-repeat;
   background-size: 100%;
@@ -361,21 +367,21 @@ body {
 }
 
 .left-card {
-  padding: 60px 69px 32px 62px;
+  padding: 59px 69px 31px 62px;
 
   border-left: 1px solid #d4d4d4;
 }
 
 .left-card-text {
   margin: 0;
-  padding-top: 2px;
+  padding-top: 1px;
   padding-left: 24px;
 
   letter-spacing: 0.4px;
 }
 
 .center-card {
-  padding: 36px 90px 32px 101px;
+  padding: 35px 90px 31px 105px;
 }
 
 .center-card-text {
@@ -387,7 +393,7 @@ body {
 }
 
 .right-card {
-  padding: 53px 128px 30px 104px;
+  padding: 52px 128px 31px 108px;
 }
 
 .right-card-text {
@@ -397,3 +403,216 @@ body {
 
   letter-spacing: 0.4px;
 }
+
+.chess {
+  padding: 30px 142px 37px 139px;
+
+  background: url("assets/images/background_chess.jpg") no-repeat;
+  background-size: 100%;
+}
+
+.scroll-head {
+  margin-bottom: 32px;
+  margin-top: 0;
+
+  color: #fff;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 37px;
+  font-weight: normal;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.blog-block {
+  max-height: 232px;
+
+  font-size: 0;
+}
+
+.article-block {
+  display: inline-block;
+  position: relative;
+  transform: translate(0, -14%);
+
+  box-sizing: border-box;
+  padding: 16px 36px 27px 30px;
+  max-width: 340px;
+
+  color: #FFFFFF;
+  font-family: "SegoeWP-Light", "Arial", sans-serif;
+  font-size: 29px;
+  letter-spacing: 0.3px;
+
+  background-color: #ec9e03;
+}
+
+.article-text {
+  margin: 0;
+}
+
+
+.plus {
+position: absolute;
+
+right: 12px;
+bottom: 12px;
+
+font-size: 0;
+}
+
+.plus path{
+transition: 180ms ease;
+}
+
+.plus path:hover {
+fill: #ec0000;
+cursor: pointer;
+}
+
+.video-block {
+  display: inline-block;
+  position: relative;
+}
+
+.blog-play-button {
+left: 50%;
+position: absolute;
+top: 50%;
+  transform: translate(-44.7%, -37.7%);
+
+  height: 61px;
+  width: 61px;
+
+  background-color: #f5c506;
+  border-radius: 100%;
+  opacity: 0.8;
+
+  transition: 200ms ease;
+}
+
+.blog-play-button:hover {
+  box-shadow: 0 0 5px 5px #fff;
+  opacity: 1;
+
+  cursor: pointer;
+}
+
+.blog-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-33%, -51%);
+}
+
+.empty-block {
+  display: inline-block;
+  position: relative;
+  transform: translate(0, -7%);
+
+  margin-left: 35px;
+  padding: 57px 82px 17px 76px;
+
+  background-color: #ec9e03;
+}
+
+.article-number {
+  position: absolute;
+  top: 10px;
+  right: 17px;
+
+  color: #fff;
+  font-size: 26px;
+  font-family: "SegoeWP-Light", "Arial", sans-serif;
+}
+
+.date {
+  display: inline-block;
+
+  margin-bottom: 41px;
+  padding: 10px 25px 4px 29px;
+
+  font-family: "Segoe UI", "Arial", sans-serif;
+  text-align: center;
+
+  background-color: #ddb101;
+}
+
+.day {
+  color: #fff;
+  font-size: 51px;
+  font-weight: bold;
+  line-height: 45px;
+}
+
+.day p {
+  margin: 0;
+}
+
+.month {
+  color: #c18000;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+.scroll-bar {
+  max-width: 896px;
+  left: 50%;
+  position: relative;
+  transform: translate(-49%, 0);
+}
+
+.scroller {
+  -webkit-appearance: none;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.scroller::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 15px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+.scroller::-webkit-slider-thumb {
+  height: 15px;
+  width: 197px;
+  border-radius: 10px;
+  background: #ec9e03;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.scroller::-moz-range-track {
+  width: 100%;
+  height: 15px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+.scroller::-moz-range-thumb {
+  border: 0;
+  height: 15px;
+  width: 197px;
+  border-radius: 19px;
+  background: #ec9e03;
+  cursor: pointer;
+}
+
+.scroller::-ms-track {
+  width: 100%;
+  height: 15px;
+  cursor: pointer;
+}
+
+.scroller::-ms-thumb {
+  width: 197px;
+  border-radius: 10px;
+  background: #ec9e03;
+  cursor: pointer;
+  height: 15px;
+}
+
+
