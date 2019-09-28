@@ -43,7 +43,7 @@ body {
 }
 
 .wrapper {
-  padding: 28px 0 66px 0;
+  padding: 27px 0 67px 0;
 
   background: url("assets/images/header_background.jpg") no-repeat;
   background-size: 100%;
@@ -231,10 +231,9 @@ body {
 }
 
 .play-button {
-  left: 50%;
+  left: 43.9%;
   position: absolute;
-  top: 50%;
-  transform: translate(-50.7%, -53.7%);
+  top: 39.2%;
 
   height: 67px;
   width: 67px;
@@ -255,9 +254,8 @@ body {
 
 .play {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-32%, -43%);
+  left: 39%;
+  top: 23%;
 }
 
 .bottom-controls {
@@ -346,72 +344,45 @@ body {
   padding-left: 139px;
   padding-right: 139px;
 
-  font-size: 0;
-
-  background: url("/assets/images/backgorund_grid.png") no-repeat;
-  background-size: 100%;
+  background: url("/assets/images/grid_pattern.png") repeat;
   box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.4);
 }
 
 .feature {
-  display: inline-block;
+  flex: 1;
 
   font-family: "Segoe UI Light", "Arial", sans-serif;
   font-size: 27px;
 
   text-align: center;
   text-transform: uppercase;
-}
-.feature-inner {
-  border-right: 1px solid #d4d4d4;
-}
-
-.left-card {
-  padding: 59px 69px 31px 62px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
 
   border-left: 1px solid #d4d4d4;
 }
 
-.left-card-text {
+.feature-inner {
+  padding-bottom: 31px;
+  padding-top: 41px
+}
+
+.feature-text {
   margin: 0;
-  padding-top: 1px;
-  padding-left: 24px;
-
-  letter-spacing: 0.4px;
 }
 
-.center-card {
-  padding: 35px 90px 31px 105px;
+.last-card {
+  border-right: 1px solid #d4d4d4;
 }
 
-.center-card-text {
-  margin: 0;
-  padding-left: 4px;
-  padding-top: 6px;
+.blog {
+  padding: 30px 142px 17px 139px;
 
-  letter-spacing: 0.1px;
+  background: url("assets/images/chess_pattern.png") repeat;
 }
 
-.right-card {
-  padding: 52px 128px 31px 108px;
-}
-
-.right-card-text {
-  margin: 0;
-  padding-top: 1px;
-  padding-left: 5px;
-
-  letter-spacing: 0.4px;
-}
-
-.chess {
-  padding: 30px 142px 37px 139px;
-
-  background: url("assets/images/background_chess.jpg") no-repeat;
-  background-size: 100%;
-}
-
-.scroll-head {
+.blog-title {
   margin-bottom: 32px;
   margin-top: 0;
 
@@ -423,16 +394,15 @@ body {
   text-transform: uppercase;
 }
 
-.blog-block {
-  max-height: 232px;
-
+.blog-gallery {
+  display: flex;
+  align-items: end;
   font-size: 0;
 }
 
-.article-block {
+.gallery-article {
   display: inline-block;
   position: relative;
-  transform: translate(0, -14%);
 
   box-sizing: border-box;
   padding: 16px 36px 27px 30px;
@@ -446,39 +416,45 @@ body {
   background-color: #ec9e03;
 }
 
+.gallery-article {
+
+}
+
 .article-text {
   margin: 0;
 }
 
-
 .plus {
-position: absolute;
+  position: absolute;
 
-right: 12px;
-bottom: 12px;
+  right: 12px;
+  bottom: 12px;
 
-font-size: 0;
+  font-size: 0;
 }
 
 .plus path{
-transition: 180ms ease;
+  transition: 180ms ease;
 }
 
-.plus path:hover {
-fill: #ec0000;
-cursor: pointer;
+.plus:hover {
+  cursor: pointer;
 }
 
-.video-block {
+.plus:hover path {
+  fill: #ec0000;
+  cursor: pointer;
+}
+
+.gallery-media {
   display: inline-block;
   position: relative;
 }
 
 .blog-play-button {
-left: 50%;
-position: absolute;
-top: 50%;
-  transform: translate(-44.7%, -37.7%);
+  left: 42%;
+  position: absolute;
+  top: 40%;
 
   height: 61px;
   width: 61px;
@@ -490,6 +466,12 @@ top: 50%;
   transition: 200ms ease;
 }
 
+.blog-play {
+  position: absolute;
+  left: 39%;
+  top: 24%;
+}
+
 .blog-play-button:hover {
   box-shadow: 0 0 5px 5px #fff;
   opacity: 1;
@@ -497,17 +479,9 @@ top: 50%;
   cursor: pointer;
 }
 
-.blog-play {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-33%, -51%);
-}
-
-.empty-block {
+.gallery-social {
   display: inline-block;
   position: relative;
-  transform: translate(0, -7%);
 
   margin-left: 35px;
   padding: 57px 82px 17px 76px;
@@ -525,11 +499,11 @@ top: 50%;
   font-family: "SegoeWP-Light", "Arial", sans-serif;
 }
 
-.date {
+.blog-date {
   display: inline-block;
 
   margin-bottom: 41px;
-  padding: 10px 25px 4px 29px;
+  padding: 10px 25px 3px 29px;
 
   font-family: "Segoe UI", "Arial", sans-serif;
   text-align: center;
@@ -554,7 +528,7 @@ top: 50%;
   text-transform: uppercase;
 }
 
-.scroll-bar {
+.blog-scroll {
   max-width: 896px;
   left: 50%;
   position: relative;
@@ -615,4 +589,127 @@ top: 50%;
   height: 15px;
 }
 
+.summary {
+  padding: 35px 136px 0 158px;
 
+  background: url("assets/images/summary_pattern.png") repeat;
+  box-shadow: inset 0 -5px 4px -2px rgba(0, 0, 0, 0.7);
+}
+
+.summary-head {
+  margin-top: 0;
+  margin-bottom: 46px;
+  padding-right: 16px;
+
+  color: #f5c506;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 43px;
+  font-weight: normal;
+  letter-spacing: 0.45px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.platforms {
+  position: relative;
+  display: inline-block;
+}
+
+.desktop{
+  opacity: 0.6;
+}
+
+.sticker {
+  position: absolute;
+  top: -42px;
+  left: -20px;
+
+  padding: 48px 6px 43px 6px;
+
+  color: #fff;
+  font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  background-color: #f5c506;
+  border-radius: 100%;
+  opacity: 1;
+  z-index: 1;
+}
+
+.tablet {
+  margin-bottom: 40px;
+  margin-left: 20px;
+
+  opacity: 0.6;
+}
+
+.mobile {
+  margin-bottom: 40px;
+  margin-left: 21px;
+
+  opacity: 0.6;
+}
+
+.about-platforms {
+  display: inline-block;
+
+  margin: 44px 0 78px 111px;
+  max-width: 345px;
+  padding: 0;
+  vertical-align: top;
+
+  color: #9d9d9b;
+  font-family: "Open Sans Regular", "Arial", sans-serif;
+  font-size: 22px;
+
+  list-style: none;
+}
+.list-item {
+  margin-bottom: 15px;
+  text-indent: -35px;
+}
+
+.list-item::before {
+  display: inline-block;
+  content: '';
+  border-radius: 100%;
+  height: 14px;
+  width: 14px;
+  margin-right: 20px;
+  background-color: #f5c506;
+}
+
+.footer {
+  background-color: #4c4c4c;
+  padding: 4px 0 4px 140px;
+}
+
+.footer-logo-block {
+  display: flex;
+
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.footer-logo-block:hover {
+  cursor: pointer;
+}
+
+.footer-logo {
+  max-width: 54px;
+}
+
+.footer-logo-text {
+  margin: 2px 0 0 5px;
+
+  color: #fff;
+  font-family: "Lucida Sans Italic", arial, sans-serif;
+  font-size: 29px;
+  font-weight: normal;
+  letter-spacing: 0.32px;
+  text-shadow: 1px 1px 0 #000000;
+  text-transform: uppercase;
+}
